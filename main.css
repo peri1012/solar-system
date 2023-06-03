@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: black;
+    padding-top:40px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-property{
+    border:1px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+.sun{
+    width:100px;
+    height:100px;
+    background-color: yellow;
+    border-radius: 50px;
+}
+.item1{
+    width:150px;
+    height:150px;
+}
+.item2{
+    width:200px;
+    height:200px;
+}
+.item3{
+    width:300px;
+    height:300px;
+}
+.item4{
+    width:400px;
+    height:400px;
+}
+.earth{
+    width:60px;
+    height:60px;
+    top:-8px;
+    left:-8px;
+}
+.planet-orange{
+    width:20px;
+    height:20px;
+    background-color: orange;
+    border-radius:50%;
+    position: absolute;
+    top:42%;
+    left:43%;
+    transform: translate(-50%,-50%);
+    animation:oranges 2s linear infinite;
+}
+.planet-blue{
+    width:35px;
+    height:35px;
+    background-color: blue;
+    border-radius:50%;
+    position: absolute;
+    top:42%;
+    left:43%;
+    transform: translate(-50%,-50%);
+    animation:orbit2 3s linear infinite;
+}
+.planet-brown{
+    width:30px;
+    height:30px;
+    background-color: brown;
+    border-radius:50%;
+    position: absolute;
+    top:48%;
+    left:48%;
+    transform: translate(-50%,-50%);
+    animation:orbit3 4s linear infinite;
+}
+.planet-earth{
+    width:40px;
+    height:40px;
+    background-color: green;
+    border-radius:50%;
+    position: absolute;
+    top:46%;
+    left:46%;
+    transform: translate(-50%,-50%);
+    animation:orbit4 5s linear infinite; 
+}
+.earth-inner{
+    width:10px;
+    height:10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:45%;
+    top:45%;
+    animation:orbit5 2s linear infinite;
+}
+@keyframes oranges {
+    from{transform: rotate(0deg)translate(75px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(75px)rotate(-360deg);}
+}
+@keyframes orbit2 {
+    from{transform: rotate(0deg)translate(100px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(100px)rotate(-360deg);}
+}
+@keyframes orbit3 {
+    from{transform: rotate(0deg)translate(200px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(200px)rotate(-360deg);}
+}
+@keyframes orbit4 {
+    from{transform: rotate(0deg)translate(150px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(150px)rotate(-360deg);}
+}
+@keyframes orbit5 {
+    from{transform: rotate(0deg)translate(30px)rotate(0deg);}
+    to{transform: rotate(360deg)translateX(30px)rotate(-360deg);}
+}
